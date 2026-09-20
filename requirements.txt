@@ -1,0 +1,35 @@
+# SwaraFlow backend dependencies
+# Install with: pip install -r requirements.txt --break-system-packages
+# (the --break-system-packages flag is only needed on systems with an
+# externally-managed Python; harmless otherwise. Using a virtualenv is
+# recommended: python -m venv .venv && source .venv/bin/activate)
+
+# --- Web framework -------------------------------------------------------
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+websockets==14.1
+pydantic==2.10.4
+python-multipart==0.0.20
+
+# --- Numeric / DSP ---------------------------------------------------------
+numpy==2.2.1
+scipy==1.14.1
+librosa==0.10.2.post1
+soundfile==0.12.1
+
+# --- Computer vision ---------------------------------------------------------
+opencv-python==4.10.0.84
+mediapipe==0.10.18
+
+# --- ML (optional neural pitch estimator extension point, session data
+#     work, agent orchestration if migrating to real LangGraph later) ---
+torch==2.5.1
+
+# --- Testing -----------------------------------------------------------------
+pytest==8.3.4
+pytest-asyncio==0.25.1
+httpx==0.28.1   # used by FastAPI's TestClient for WebSocket/API tests
+
+# --- Dev tooling -----------------------------------------------------------
+ruff==0.8.4     # linting (spec section 33: "run lint/type checks")
+mypy==1.14.0
