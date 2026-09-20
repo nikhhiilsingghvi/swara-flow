@@ -73,4 +73,4 @@ swara-flow/
 
 ## License
 
-Not yet specified -- add a LICENSE file appropriate to your intended use.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
